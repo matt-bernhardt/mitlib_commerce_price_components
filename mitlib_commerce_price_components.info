@@ -1,0 +1,7 @@
+name = MIT commerce price components
+description = Custom price components for the MIT Libraries
+package = "MIT Libraries"
+core = 7.x
+
+dependencies[] = commerce_price
+

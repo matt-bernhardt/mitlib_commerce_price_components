@@ -1,0 +1,41 @@
+<?php
+/**
+ * @file
+ * Module file for Price by components.
+ */
+
+/**
+ * Implements hook_commerce_price_component_type_info().
+ */
+function mitlib_commerce_price_components_commerce_price_component_type_info() {
+  return array(
+    'alumni_discount' => array(
+      'title' => t('Alumni discount'),
+      'weight' => -10,
+      ),
+    'author' => array(
+      'title' => t('Thesis author discount'),
+      'weight' => 19,
+      ),
+    'ilp_discount' => array(
+      'title' => t('ILP discount'),
+      'weight' => -11,
+      ),
+    'mit_discount' => array(
+      'title' => t('MIT discount'),
+      'weight' => -12,
+      ),
+    'other' => array(
+      'title' => t('Other payment method'),
+      'weight' => 20,
+    ),
+    'binding' => array(
+      'title' => t('Printing and binding'),
+      'weight' => -20,
+      ),
+    'same_day_rush' => array(
+      'title' => t('Same day rush'),
+      'weight' => -21,
+      ),
+    );
+}
